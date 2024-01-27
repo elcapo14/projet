@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carshop</title>
+   <!-- Latest compiled and minified CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- début navbar -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+      <!-- Brand -->
+      <a class="navbar-brand" href="../index.html">Carshop</a>
+  
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Acceuil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/models.html">Models</a>
+          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../pages/reparation.html">Réparation</a></li>
+              </ul>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/propos.html">A propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin navbar -->
+
+<!-- début navbar -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed  container-fluid ">
+  <!-- Brand -->
+  <a class="navbar-brand" href="./index.html">Carshop</a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Acceuil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../">Models</a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="../pages/services.html" id="navbardrop" data-toggle="dropdown">
+            Services
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="./pages/reparation.html">Réparation</a>
+          </div>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="../pages/a-propos.html">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/contact.html">Contact</a>
+        </li>
+    </ul>
+  </div>
+</nav>
+<!-- fin navbar -->
+<section>
+<!-- début contact -->
+<h1 class="text-center">Formulaire de Contact</h1>
+
+<!-- Wrapper container -->
+<div class="container py-4 d-flex justify-content-space-between">
+<div class="maps">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7669.898106260729!2d-16.492044896499653!3d16.016167400803166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe9556f813e4663b%3A0x5159f3d1a195e8d3!2sCite%20Niakh%2C%20Saint-Louis!5e0!3m2!1sfr!2ssn!4v1706273691580!5m2!1sfr!2ssn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!-- Bootstrap 5 starter form -->
+<form class="container" id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+<!-- Name input -->
+<div class="mb-3">
+<label class="form-label" for="name">Name</label>
+<input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+<div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+</div>
+
+<!-- Email address input -->
+<div class="mb-3">
+<label class="form-label" for="emailAddress">Email Address</label>
+<input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+<div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+<div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+</div>
+
+<!-- Message input -->
+<div class="mb-3">
+<label class="form-label" for="message">Message</label>
+<textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+<div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+</div>
+
+<!-- Form submissions success message -->
+<div class="d-none" id="submitSuccessMessage">
+<div class="text-center mb-3">Form submission successful!</div>
+</div>
+
+<!-- Form submissions error message -->
+<div class="d-none" id="submitErrorMessage">
+<div class="text-center text-danger mb-3">Error sending message!</div>
+</div>
+
+<!-- Form submit button -->
+<div class="d-grid">
+<button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+</div>
+
+</form>
+
+</div>
+</section>
+<!-- debut footer -->
+<footer style="background-color:black;">
+<div class="container d-flex justify-content-space-between">
+<!--debut section logo -->
+<div class="logo">
+<img src="../medias/car.png" alt="" width="100px" height="100px">
+</div>
+<!--fin section logo -->
+
+<!--debut section social-media -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<div class="social-media">
+<div><box-icon type='logo' name='twitter'></box-icon></div>
+<div><box-icon type='logo' name='facebook'></box-icon></div>
+<div><box-icon type='logo' name='github'></box-icon></div>
+<div><box-icon type='logo' name='gmail'></box-icon></div>
+<div></div>
+</div>
+<!--fin section social-media -->
+
+<!--debut section contact  -->
+<div class="contact">
+<p style="color: white; margin-top:50px; margin-left: 400px;" >&copy;Tous droits réservés</p>
+</div>
+<!--fin section contact  -->
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>  
+</body>
+</html>
